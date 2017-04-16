@@ -6,6 +6,20 @@ public class UpdateArray {
         int [] arr = {1, 2, 3, 4, 5, 6};
         updateArray(arr, arr.length - 1);
         printArray(arr, arr.length - 1);
+        System.out.println();
+        printTable(2);
+    }
+
+    private static void printTable(int n) {
+        printTab(n, 1);
+    }
+
+    private static void printTab(int n, int i) {
+        if(i > 10) {
+            return;
+        }
+        System.out.println(n*i);
+        printTab(n, i + 1);
     }
 
     private static void printArray(int[] arr, int n) {
