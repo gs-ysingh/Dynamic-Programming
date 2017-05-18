@@ -4,7 +4,7 @@
 public class MatrixChainMultiplication {
     public static void main(String[] args) {
         int [] arr = {1, 2, 3, 4};
-        //System.out.println(minMultiplicationDP(arr, arr.length));
+        System.out.println(minMultiplicationDP(arr, arr.length));
         System.out.println(minMultiplication(arr, 1, arr.length - 1));
     }
 
