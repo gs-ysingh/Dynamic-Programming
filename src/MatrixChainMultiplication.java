@@ -12,9 +12,7 @@ public class MatrixChainMultiplication {
         if(start == end) {
             return 0;
         }
-
         int min = Integer.MAX_VALUE;
-
         for (int k = start; k < end; k++) {
             min = Math.min(min,
                     minMultiplication(arr, start, k)
@@ -22,7 +20,6 @@ public class MatrixChainMultiplication {
                             + arr[start - 1] * arr[k] * arr[end]
             );
         }
-
         return min;
     }
 
